@@ -1,0 +1,9 @@
+dependencies {
+    implementation project(':model')
+    implementation project(':properties-manager')
+    implementation project(':settings')
+
+    implementation(libs.commons.lang3)
+    implementation(libs.vlcj)
+    implementation(libs.mp3agic)
+}

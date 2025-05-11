@@ -1,1 +1,27 @@
+pluginManagement {
+    repositories {
+        //mavenLocal()
+        //maven { url = '...' }
+        gradlePluginPortal()
+    }
+}
+
 rootProject.name = 'aniron'
+
+include ':app-service'
+project(':app-service').projectDir = file("application/app-service")
+
+include 'model'
+project(':model').projectDir = file("domain/model")
+
+include 'usecase'
+project(':usecase').projectDir = file("domain/usecase")
+
+include 'gui-controller'
+project(':gui-controller').projectDir = file("infrastructure/entry-points/gui-controller")
+
+include 'properties-manager'
+project(':properties-manager').projectDir = file("infrastructure/helpers/properties-manager")
+
+include 'settings'
+project(':settings').projectDir = file("infrastructure/helpers/settings")

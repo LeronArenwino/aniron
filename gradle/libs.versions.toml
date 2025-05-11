@@ -1,0 +1,16 @@
+[versions]
+lombok = "1.18.38"
+vlcj = "4.7.1"
+commons-lang3 = "3.0"
+mp3agic = "0.9.1"
+
+[libraries]
+vlcj = { module = "uk.co.caprica:vlcj", version.ref = "vlcj" }
+commons-lang3 = { module = "org.apache.commons:commons-lang3", version.ref = "commons-lang3" }
+lombok = { module = "org.projectlombok:lombok", version.ref = "lombok" }
+mp3agic = { module = "com.mpatric:mp3agic", version.ref = "mp3agic" }
+
+[bundles]
+
+
+[plugins]
